@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="10" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.example.websocket.test.D1Test">
+        <methods>
+          <include name="testD1" invocation-numbers="1 2 3 4 5 6"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.example.websocket.test.D1Test -->
+      <class name="com.example.websocket.test.A1Test">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="testA1" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.example.websocket.test.A1Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
