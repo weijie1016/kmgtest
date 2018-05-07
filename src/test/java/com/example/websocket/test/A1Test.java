@@ -42,7 +42,6 @@ public class A1Test extends BaseTest {
 		Assert.assertEquals(arrivalList.get(i).getFromCityZH(), data.get("fromCityZH"));
 		Assert.assertEquals(arrivalList.get(i).getExitNo(), data.get("exitNo"));
 		Assert.assertEquals(arrivalList.get(i).getStatusZH(), data.get("statusZH"));
-		i++;
 	}
 
 	@DataProvider(name = "a1")
